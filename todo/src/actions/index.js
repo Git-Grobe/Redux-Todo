@@ -13,11 +13,11 @@ export const addTodoAction = todo => {
     }
 };
 
-export const toggleTodo = index => {
-    console.log("Toggle Todo Action")
-    return {
-        type: TOGGLE_TODO,
-        payload: index
-    }
-};
+// export const toggleTodo = index => {
+//     console.log("Toggle Todo Action")
+//     return {
+//         type: TOGGLE_TODO,
+//         payload: index
+//     }
+// };
 
