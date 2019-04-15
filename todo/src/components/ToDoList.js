@@ -28,7 +28,7 @@ class ToDoList extends Component {
                 {console.log(this.state.newToDo)}
                 <input onChange={this.handleChanges} value={this.state.newToDo}/>
                 <button onClick={this.addToDo}>Add Todo</button>
-                {/* {this.props.todos.map(item => <ToDo item={item}/>)} */}
+                {this.props.todos.map((item, index) => <ToDo key={index} {...item}/>)}
 
             </div>
         )
@@ -36,7 +36,7 @@ class ToDoList extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log(state.todo)
+    console.log(state.todos, "111")
     return {
         todos: state.todos
     };

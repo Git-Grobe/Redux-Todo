@@ -4,7 +4,8 @@ import React from 'react';
 const ToDo = props => {
     return (
         <div>
-            {props.item}
+        {console.log(props.todo)}
+            {props.todo}
         </div>
     )
 }
